@@ -5,8 +5,6 @@
 │   └── unet_train/
 ├── dataset_old/
 ├── dataset_young/
-├── examples/
-├── examples_young/
 ├── extract_faces/
 │   ├── model_data/
 │   ├── data_generator.py
@@ -25,19 +23,13 @@
 └── young2old.ipynb
 
 dataset_old:
-folder that contains the 2000 images of elderly people. To have a functioning code you need to extract the faces as shown in young2old_dataset_creation.ipynb. The young2old.ipynb console expects a complete dataset_old_faces with all the extracted faces needed for training.
+folder that contains of elderly people. To have a functioning code you need to extract the faces as shown in young2old_dataset_creation.ipynb. The young2old.ipynb console expects a complete dataset_old_faces with all the extracted faces needed for training.
 
 dataset_young:
-folder that contains the 2000 images of young people. To have a functioning code you need to extract the faces as shown in young2old_dataset_creation.ipynb. The young2old.ipynb console expects a complete dataset_young_faces with all the extracted faces needed for training.
+folder that contains the images of young people. To have a functioning code you need to extract the faces as shown in young2old_dataset_creation.ipynb. The young2old.ipynb console expects a complete dataset_young_faces with all the extracted faces needed for training.
 
 checkpoints:
-folder that contains the latest checkpoint for each trained model. Warning: the number shown in the checkpoints does not necessarily correspond to the number of epochs run.
-
-example:
-folder with some example images from dataset_old
-
-example_young:
-folder with some example images from dataset_old
+folder that contains the latest checkpoint for each trained model.
 
 extract_faces:
 folder with models and files used to extract the faces. The code in this folder is copied from https://github.com/kb22/Create-Face-Data-from-Images. I edited the original face_extractor.py creating the 'face_extractor_mine.py'. In my version the square around the faces is bigger, it includes a bigger portion of the face and some elements around it. 
@@ -68,8 +60,6 @@ detailed notebook that explaines how the datasets were collected (including the 
 
 young2old.ipynb:
 core notebook that contains the most important part of the project. It's divided in different sections that are all very detailed: preprocessing, training (three models), visual testing, quantitative evaluation.
-
-
 
 SOURCES:
 The face extraction uses the already mentioned github folder https://github.com/kb22/Create-Face-Data-from-Images. 
