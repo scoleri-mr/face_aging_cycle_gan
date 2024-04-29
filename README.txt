@@ -1,3 +1,4 @@
+To replicate the code, the working folder should look something like this:
 .
 ├── checkpoints/
 │   ├── resnet_train/
